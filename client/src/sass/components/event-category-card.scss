@@ -1,0 +1,41 @@
+.event-catcard {
+  width: 20rem;
+  height: 20rem;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(35, 22, 101, 0.9) 0%,
+      rgba(37, 24, 106, 0.9) 59%,
+      rgba(35, 22, 101, 0.9) 100%
+    ),
+    url("../../assets/event-category.jpg");
+  background-size: cover;
+  color: $font-color2;
+  border-radius: 35px;
+  box-shadow: 0 0 10px 5px;
+  &--1 {
+    padding-top: 10rem;
+    text-align: center;
+  }
+  &:hover {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(35, 22, 101, 0.7) 0%,
+        rgba(37, 24, 106, 0.7) 59%,
+        rgba(35, 22, 101, 0.7) 100%
+      ),
+      url("../../assets/event-category.jpg");
+    color: $font-color1;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 750px) {
+  .event-catcard {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 3rem;
+    &--1 {
+        padding-top: 7rem;
+      }
+  }
+}

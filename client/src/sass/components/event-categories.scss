@@ -1,0 +1,16 @@
+.event-categories {
+  &--container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10rem 5rem;
+  }
+}
+
+@media (max-width: 750px){
+.event-categories{
+    &--container{
+        flex-direction: column;
+        padding: 3rem 2rem 3rem 4rem;
+    }
+}
+}
