@@ -1,12 +1,11 @@
 @mixin translucent-background {
   background-image: linear-gradient(
     to bottom right,
-    #46428480 0%,
-    #40387f56 59%,
-    #4a428273 100%
+    #46428454 0%,
+    #40387f2f 59%,
+    #4b428256 100%
   );
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: #2B1E70 0px 50px 100px -20px,
-    #762775 0px 30px 60px -30px;
+  box-shadow: $purple-3 0px 3px 8px;
 }
