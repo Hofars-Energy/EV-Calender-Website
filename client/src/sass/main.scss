@@ -1,6 +1,7 @@
 //base
 @import './base/variables.scss';
 @import './base/root.scss';
+@import './base/mixins.scss';
 
 //components
 @import './components/hero.scss';
@@ -9,6 +10,7 @@
 @import './components/button.scss';
 @import './components/special-button.scss';
 @import './components/navbar.scss';
+@import './components/login-box.scss';
 
 //pages
 @import './pages/login.scss';
