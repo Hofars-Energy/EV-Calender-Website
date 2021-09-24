@@ -1,0 +1,30 @@
+.navbar {
+  @include translucent-background;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1rem;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  // background-image: linear-gradient(
+  //     to bottom right,
+  //     rgba(35, 22, 101, 0.2) 0%,
+  //     rgba(37, 24, 106, 0.3) 59%,
+  //     rgba(35, 22, 101, 0.2) 100%
+  //   );
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.navbar button {
+  float: left;
+  display: block;
+}
+
+@media (max-width: 750px) {
+  .navbar {
+    justify-content: center;
+  }
+}

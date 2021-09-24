@@ -1,0 +1,19 @@
+.spl-btn {
+  padding: 0.7rem 2rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $font-color2;
+  font-size: 1.2rem;
+  transition: 0.2s ease-in;
+  a {
+    text-decoration: none;
+    color: $font-color2;
+  }
+  &:hover {
+    a {
+      color: $font-color1;
+    }
+  }
+}

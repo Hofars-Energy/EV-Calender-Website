@@ -1,0 +1,7 @@
+.login-box{
+    @include translucent-background;
+    min-height: 20vh;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+}
