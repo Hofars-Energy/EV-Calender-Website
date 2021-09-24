@@ -15,7 +15,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding-top: 15rem;
+      padding-top: 10rem;
       font-size: 2rem;
       &-1 {
         margin-right: 1rem;
@@ -23,6 +23,12 @@
       &-2{
           color: $font-color2;
       }
+    }
+    &--button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
     }
   }
 }
