@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
-import Upcoming from './components/Upcoming';
+import Upcoming from './pages/Upcoming';
 
 function App() {
   return (

@@ -1,6 +1,4 @@
-import React from 'react'
-import "./Upcoming.css"
-import EventCard from './EventCard'
+import EventCard from '../components/EventCard'
 
 function Upcoming() {
     return (

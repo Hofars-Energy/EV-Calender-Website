@@ -1,5 +1,3 @@
-import React from 'react'
-import "./EventCard.css"
 import EventIcon from '@material-ui/icons/Event';
 import GroupIcon from '@material-ui/icons/Group';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
