@@ -1,0 +1,51 @@
+.card{
+    /* background-color: yellow; */
+    width: 22vw;
+    /* height: 33vh; */
+    border-radius: 15px;
+    color: black;
+    background-image: url("../../assets/hero.jpg") ;
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* opacity: 0.8; */
+    background-color: purple;
+    padding: 5%;
+    margin-bottom: 50px;
+}
+
+.flex-row{
+    display: flex;
+    flex-flow: row;
+    margin-top: 10px;
+}
+
+.icon{
+    margin-right: 10px;
+}
+
+.buttons{
+    margin-top: 18px;
+    justify-content: space-between;
+}
+
+.button{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    background-color: rgb(165, 129, 211);
+    outline: none;
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.attend{
+    background-color: rgb(165, 129, 211);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
