@@ -1,0 +1,76 @@
+@import '../base/variables.scss';
+.div{
+padding: 80px 60px;
+background: black;
+position: absolute;
+bottom: 0;
+width: 100%;
+
+
+@media (max-width: 1920px) {
+	padding: 40px 30px;
+}
+}
+
+.content{
+	font: $font-2;
+	color: $font-color1;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	background-color: $purple-2;
+}
+
+.column{
+display: flex;
+flex-direction: column;
+text-align: left;
+margin-left: 60px;
+margin-bottom: 40px;
+}
+.h1{
+	margin-top: 10px;
+}
+.row{
+display: grid;
+grid-template-columns: repeat(auto-fill,
+						minmax(20rem, 1fr));
+grid-gap: 20px;
+
+@media (max-width: 1000px) {
+	grid-template-columns: repeat(auto-fill,
+						minmax(200px, 1fr));
+}
+}
+
+.logoImage{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.footer-link{
+	margin-bottom: 20px;
+	color: $font-color1;
+	.a{
+	color: $font-color1;
+	font-size: 18px;
+	text-decoration: none;
+	
+	&:hover {
+		color: $font-color2;
+		transition: 200ms ease-in;
+		text-decoration: underline;
+	}
+	}
+	
+}
+
+.heading{
+font-size: 24px;
+color: $font-color2;
+margin-bottom: 10px;
+font-weight: bold;
+}

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 import Upcoming from './pages/Upcoming';
 
+
 function App() {
   return (
     <div className="App">

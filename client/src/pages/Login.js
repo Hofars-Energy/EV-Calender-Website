@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Box from "../components/LoginBox";
 
 export default function Login() {
@@ -6,7 +7,7 @@ export default function Login() {
             <div className="login-container">
                  <Box/>
             </div>
-            
+        <Footer />
         </div>
     )
 }
