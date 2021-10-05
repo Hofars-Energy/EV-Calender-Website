@@ -21,7 +21,7 @@ width: 100%;
 	flex-direction: column;
 	justify-content: center;
 	margin: 0 auto;
-	background-color: $purple-2;
+	background-color: #0e0e0e;
 }
 
 .column{
@@ -33,6 +33,7 @@ margin-bottom: 40px;
 }
 .h1{
 	margin-top: 10px;
+	font: $font-1;
 }
 .row{
 display: grid;
