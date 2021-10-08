@@ -15,6 +15,10 @@ const userSchema = new schema({
         type: String,
         required: true
     },
+    accessType: {
+        type: String,
+        enum: ['Admin', 'Editor', 'Viewer']
+    },
     events: [
         {
             eventId: {
