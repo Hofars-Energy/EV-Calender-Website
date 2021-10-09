@@ -13,7 +13,7 @@
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.33",
     "momentjs": "^2.0.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-add-to-calendar": "^0.1.5",
     "react-bootstrap": "^2.0.0-rc.0",
