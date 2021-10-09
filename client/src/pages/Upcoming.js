@@ -1,4 +1,5 @@
 import EventCard from '../components/EventCard'
+import Footer from '../components/Footer'
 
 function Upcoming() {
     return (
@@ -11,6 +12,7 @@ function Upcoming() {
                 <EventCard/>
                 <EventCard/>
             </div>
+            <Footer />
         </div>
     )
 }
