@@ -2,6 +2,8 @@ const express = require("express");
 
 const mongoose = require("mongoose");
 
+const bodyParser = require("body-parser");
+
 const eventRouter = require("./routes/events");
 
 const authRouter = require("./routes/auth");
@@ -11,6 +13,8 @@ const callPy = require("./routes/callPython");
 const cors = require("cors");
 
 const app = express();
+
+app.use(bodyParser.urlencoded({extended:true}))
 
 app.use(express.json());
 
@@ -32,7 +36,7 @@ app.use("/",(req,res,next) => {
 })
 
 
-mongoose.connect(`mongodb+srv://${process.env.USER}:${process.env.PASS}@cluster0.kpq9o.mongodb.net/${process.env.DB}?retryWrites=true&w=majority`)
+mongoose.connect('mongodb://localhost:27017/ev_calender')
 .then(() => {
     app.listen(3000);
 })
