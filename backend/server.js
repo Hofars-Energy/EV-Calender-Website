@@ -6,6 +6,8 @@ const bodyParser = require("body-parser");
 
 const eventRouter = require("./routes/events");
 
+const addEventRouter = require("./routes/addEvent.js");
+
 const authRouter = require("./routes/auth");
 
 const callPy = require("./routes/callPython");
@@ -29,6 +31,8 @@ app.use(authRouter);
 
 app.use(eventRouter);
 
+app.use(addEventRouter);
+
 
 app.use("/",(req,res,next) => {
     res.send("hello");
@@ -38,7 +42,7 @@ app.use("/",(req,res,next) => {
 
 mongoose.connect('mongodb://localhost:27017/ev_calender')
 .then(() => {
-    app.listen(3000);
+    app.listen(3000 | process.env.PORT);
 })
 .catch((err) => {
     console.log(err);
