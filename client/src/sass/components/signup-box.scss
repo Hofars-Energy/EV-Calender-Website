@@ -1,0 +1,27 @@
+.signup-box {
+    @include translucent-background;
+    width: auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 6rem 0;
+    &--form{
+      display: flex;
+      flex-direction: column;
+    }
+    &--or{
+      text-align: center;
+      margin: 1rem 0;
+    }
+    &--end{
+      margin-top: 1.5rem;
+      color: $font-color2;
+      text-align: center;
+      a{
+        color: $font-color2;
+      }
+    }
+  }
+  

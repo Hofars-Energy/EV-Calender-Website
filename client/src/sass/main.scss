@@ -2,6 +2,7 @@
 @import './base/variables.scss';
 @import './base/root.scss';
 @import './base/mixins.scss';
+@import './base/generics.scss';
 
 //components
 @import './components/hero.scss';
@@ -12,8 +13,10 @@
 @import './components/navbar.scss';
 @import './components/login-box.scss';
 @import './components/event-card.scss';
+@import './components/signup-box.scss';
 
 //pages
 @import './pages/login.scss';
 @import './pages/upcoming.scss';
 @import './components/Footer.scss';
+@import './pages/sign-up.scss';
