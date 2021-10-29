@@ -1,0 +1,17 @@
+.generic{
+    &-label{
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+    &-input{
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border-radius: 35px;
+        min-width: 20vw;
+        outline: none;
+        border: none;
+        color: $font-color2;
+        background: transparent;
+        font-size: 1.1rem;
+    }
+}
