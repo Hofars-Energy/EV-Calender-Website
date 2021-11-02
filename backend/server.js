@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 
 const bodyParser = require("body-parser");
 
+require('dotenv').config()
+
 const eventRouter = require("./routes/events");
 
 const addEventRouter = require("./routes/addEvent.js");

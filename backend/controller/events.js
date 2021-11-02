@@ -1,6 +1,5 @@
-
 const axios = require("axios");
-
+const chrono = require('chrono-node')
 exports.fetchEvents = (req,res,next) => {
     // axios.get("https://dummy.restapiexample.com/api/v1/employees")
     // .then((res) => {
@@ -16,6 +15,7 @@ exports.fetchEvents = (req,res,next) => {
         var urlRegex = /(https?:\/\/[^ ]*)/;
         let urlArray = response.data.data.map(element => {
             element.eventUrl = element.text.match(urlRegex)[0];
+            element.date = chrono.parseDate(element.text);
             return element;
         });
         return res.status(200).json({
