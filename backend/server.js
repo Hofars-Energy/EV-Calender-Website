@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 
 const bodyParser = require("body-parser");
 
+require('dotenv').config()
+
 const eventRouter = require("./routes/events");
 
 const authRouter = require("./routes/auth");
@@ -38,7 +40,7 @@ app.use("/",(req,res,next) => {
 
 mongoose.connect('mongodb://localhost:27017/ev_calender')
 .then(() => {
-    app.listen(3000);
+    app.listen(3000,()=>console.log(process.env.BEARER_TOKEN));
 })
 .catch((err) => {
     console.log(err);

@@ -1,23 +1,31 @@
 
 const axios = require("axios");
+const chrono = require('chrono-node')
 
 exports.fetchEvents = (req,res,next) => {
     // axios.get("https://dummy.restapiexample.com/api/v1/employees")
     // .then((res) => {
     //     console.log(res);
     // })
+    const token = process.env.BEARER_TOKEN
     axios.get("https://api.twitter.com/2/tweets/search/recent?query=electric vehicles webinar -is:retweet has:links&max_results=100",{
         headers:{
-            "Authorization":"Bearer " + process.env.Bearer_Token_Twitter
+          "Authorization": "Bearer "+process.env.BEARER_TOKEN
         }
     })
     .then((response) => {
+        var mydate = chrono.parseDate('An appointment on 12th November')
+        
         console.log(response.data.data);
         var urlRegex = /(https?:\/\/[^ ]*)/;
         let urlArray = response.data.data.map(element => {
             element.eventUrl = element.text.match(urlRegex)[0];
+            element.date = chrono.parseDate(element.text);
             return element;
         });
+
+
+
         return res.status(200).json({
             webinarTweets:urlArray
         })

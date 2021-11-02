@@ -8,8 +8,6 @@ const passport = require("passport");
 
 const router = express.Router();
 
-router.get("/events",passport.authenticate("jwt",{
-    session:false
-}),eventController.fetchEvents);
+router.get("/events",eventController.fetchEvents);
 
 module.exports = router;
